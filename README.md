@@ -1,7 +1,5 @@
 # QuantumCart
 
-<img src="https://github.com/Rishi838/ShopNet/assets/77577908/366c7dcf-fe08-4d3f-ac2d-fefb18e111a5" style="width:140px; height:80px">
-
 
 Welcome to our Ecommerce Store! This is a live website where customers can browse and purchase products online. Our store offers a wide range of high-quality products, from electronics and fashion to home goods and accessories.
 
