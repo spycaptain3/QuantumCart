@@ -1,4 +1,4 @@
-# ShopNet
+# QuantumCart
 
 <img src="https://github.com/Rishi838/ShopNet/assets/77577908/366c7dcf-fe08-4d3f-ac2d-fefb18e111a5" style="width:140px; height:80px">
 
