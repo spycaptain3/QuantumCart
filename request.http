@@ -1,0 +1,22 @@
+POST http://localhost:3000/add_product
+Content-Type: application/json
+
+{
+   "name" : "Denim Mens Shirt",
+   "price" :26,
+   "category" : "Mens Shirt",
+   "image" : [
+     
+     "/utilities/product_image/MensShirts/49.jpg",
+     "/utilities/product_image/MensShirts/50.jpg",
+     "/utilities/product_image/MensShirts/51.jpg",
+     "/utilities/product_image/MensShirts/52.jpg"
+   ],
+   "trending" : true,
+   "attributes" : {
+    "Color" : "Off Brown",
+    "Brand" : "Cantabil",
+    "Type" : "Cotton",
+    "Sleeve" : "Half"
+   }
+}

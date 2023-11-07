@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <title>Tab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-color: #F6F6F6; margin: 0;padding: 0;">
+
+    <div style="width: 80%;margin-right: auto;margin-left: auto;">
+        <div style="background-color: #0d1033;padding: 10px 40px;">
+            <div style="display: flex;flex-wrap: wrap;">
+                <div style="width: 50%;flex: 0 0 auto;">
+                    <h1  style="color: #fff; margin: 0; padding: 0;">Invoice</h1>
+                </div>
+                <div style="width: 50%;flex: 0 0 auto;">
+                    <div style="float: right;text-align: right;">
+                        <p style="color: #fff;"><%= user.Name %></p>
+                        <p style="color: #fff;"><%= user.Email %></p>
+                        <!-- <p style="color: #fff;">{{phone}}</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 16px;border: 1px solid gray;">
+            <div style="display: flex;flex-wrap: wrap;">
+                <div style="width: 50%;flex: 0 0 auto;">
+                    <h2 style=" margin: 0; padding: 0; font-size: 20px;margin-bottom: 08px;" >Invoice No.: <%= order._id %></h2>
+              
+                    <p style="color: #262626;margin-bottom: 05px;margin: 0; padding: 0;">Order Date: <%= order.createdAt %> </p>
+                    <p style="color: #262626;margin-bottom: 05px;margin: 0; padding: 0;">Shpping Address: <%= order.shippingAddress %> </p>
+                </div>
+               
+            </div>
+        </div>
+
+        <div style="padding: 16px;border: 1px solid gray;">
+            <h3 style="font-size: 20px;margin-bottom: 08px;">Ordered Items</h3>
+            <br>
+            <table style="background-color: #fff;width: 100%;border-collapse: collapse;box-shadow: 0px 0px 5px 0.5px gray;">
+                <thead>
+                    <tr style="border: 1px solid #111;background-color: #f2f2f2;">
+                        <th style="border: 1px solid #dee2e6;">Product</th>
+                        <th style="border: 1px solid #dee2e6;padding-top: 08px;padding-bottom: 08px;width: 20%;" >Price</th>
+                        <th style="border: 1px solid #dee2e6;padding-top: 08px;padding-bottom: 08px;width: 20%;" >Quantity</th>
+                        <th style="border: 1px solid #dee2e6;padding-top: 08px;padding-bottom: 08px;width: 20%;" >Grandtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <% for (let i = 0; i < order.products.length ; i++) { %>
+                    <tr>
+                      <td style="border: 1px solid #dee2e6;padding-top: 08px;padding-bottom: 08px;vertical-align: middle !important;text-align: center;"><%= products[i].Name %></td>
+                      <td style="border: 1px solid #dee2e6;padding-top: 08px;padding-bottom: 08px;vertical-align: middle !important;text-align: center;"><%= products[i].Price %></td>
+                      <td style="border: 1px solid #dee2e6;padding-top: 08px;padding-bottom: 08px;vertical-align: middle !important;text-align: center;"><%= order.products[i].quantity %></td>
+                      <td style="border: 1px solid #dee2e6;padding-top: 08px;padding-bottom: 08px;vertical-align: middle !important;text-align: center;"><%= order.products[i].quantity * products[i].Price %></td>
+                     </tr>
+                  <% } %>
+                    <tr>
+                        <td style="text-align: end;border: 1px solid #dee2e6;padding-top: 08px;padding-bottom: 08px;vertical-align: middle !important;text-align: center;" colspan="3" >Sub Total</td>
+                        <td style="border: 1px solid #dee2e6;padding-top: 08px;padding-bottom: 08px;vertical-align: middle !important;text-align: center;"><%= order.totalAmount %></td>
+                    </tr>
+              
+                    <tr>
+                        <td style="border: 1px solid #dee2e6;padding-top: 08px;padding-bottom: 08px;vertical-align: middle !important;text-align: center;text-align: end;" colspan="3" >Grand Total</td>
+                        <td style="border: 1px solid #dee2e6;padding-top: 08px;padding-bottom: 08px;vertical-align: middle !important;text-align: center;"><%= order.totalAmount %><td> 
+                    </tr>
+
+                </tbody>
+            </table>
+            <br>
+           
+            <h3 style="font-size: 20px;margin-bottom: 08px; margin: 0; padding: 0;">Order Status: <%= order.status %></h3>
+            </div>
+ </body>    
+</html>

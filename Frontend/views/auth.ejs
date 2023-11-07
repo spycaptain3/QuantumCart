@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+                         initial-scale=1.0">
+    <title>Authorize-QuantumCart</title>
+    <link rel="icon" type="image/png" href="./Frontend/img/logo.png" />
+    <link rel="stylesheet"
+          href="./Frontend/stylesheet/auth.css">
+</head>
+ 
+<body>
+    <header>
+        <h1 class="heading">QuantumCart</h1>
+        <h3 class="title">"Where Shopping Takes a Quantum Leap!"</h3>
+    </header>
+ 
+    <!-- container div -->
+    <div class="container">
+ 
+        <!-- upper button section to select
+             the login or signup form -->
+        <div class="slider"></div>
+        <div class="btn">
+            <button class="login-slider">Login</button>
+            <button class="signup-slider">Signup</button>
+        </div>
+ 
+        <!-- Form section that contains the
+             login and the signup form -->
+        <div class="form-section">
+ 
+            <!-- login form -->
+            <div class="login-box">
+                <input type="email"
+                       class="email ele"
+                       placeholder="youremail@email.com"
+                       id="login_email_id">
+                <span class="error" id="login_email_error"></span>
+                <input type="password"
+                       class="password ele"
+                       placeholder="password"
+                       id="login_password">
+                <div class="error" id="login_pass_error"></div>       
+                <button class="clkbtn" id="login">Login</button>
+                <div class="loader" id="load1">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <span class="error" id="login_credentials_error"></span>   
+            </div>
+ 
+            <!-- signup form -->
+            <div class="signup-box">
+                <input type="text"
+                       class="name ele"
+                       placeholder="Enter your name"
+                       id="signup_name">
+                <div class="error" id="signup_name_error"></div>          
+                <input type="email"
+                       class="email ele"
+                       placeholder="youremail@email.com"
+                       id="signup_email">
+                <div class="error" id="signup_email_error"></div> 
+                <input type="password"
+                       class="password ele"
+                       placeholder="password"
+                       id="signup_pass">
+                <div class="error" id="signup_pass_error"></div>   
+                <button class="clkbtn" id="signup">Signup</button>
+                <div class="loader" id="load2">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="error" id="signup_credentials_error"></div> 
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./Frontend/scripts/auth.js"></script>
+</body>
+</html>

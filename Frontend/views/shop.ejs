@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuantumCart-shop</title>
+    <link rel="icon" type="image/png" href="./Frontend/img/logo.png">
+    <link rel="stylesheet" href="./Frontend/stylesheet/home.css" />
+    <link rel="stylesheet" href="./Frontend/stylesheet/shop.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <section id="header">
+      <header class="header-area">
+        <!-- site-navbar start -->
+        <div class="navbar-area">
+         
+            <nav class="site-navbar">
+              <!-- site logo -->
+              <a href="/"><img src="./Frontend/img/logo.png" class="logo"></a>
+      
+              <!-- site menu/nav -->
+              <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/shop" style="text-decoration: underline; color:#49b293;"> shop</a></li>
+                <li><a href="/orders">orders</a></li>
+                <li><a href="/auth" id="nav_auth">Authenticate</a></li>
+                <li><a id="nav_logout">Logout</a></li>
+                <li><a href="/cart"><i style="color: black" class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+              </ul>
+      
+              <!-- nav-toggler for mobile version only -->
+              <button class="nav-toggler">
+                <span></span>
+              </button>
+            </nav>
+        
+        </div><!-- navbar-area end -->
+      </header>
+    </section>
+    <div class="container" id="notificationContainer" style="z-index:3"></div>
+    <section id="page-header" class="about-header">
+      <h2>#EasyShop</h2>
+      <p>
+        "Shop the Finest Selection – Unravel the Realm of Premium Products!"
+      </p>
+    </section>
+    <section class="author-archive">
+      <div class="category-container">
+        <p class="categories">Discover Your Favorites</p>
+        <div class="filters" id="radio-container">
+          <input type="radio" id="All" name="categories" value="All" checked />
+          <label for="All">All Products</label>
+          <input type="radio" id="Mens Shirt" name="categories" value="Mens Shirt" />
+          <label for="Mens Shirt">Mens Shirt</label>
+          <input type="radio" id="Mens Tshirt" name="categories" value="Mens Tshirt" />
+          <label for="Mens Tshirt">Mens Tshirt</label>
+          <input type="radio" id="Mens Jeans" name="categories" value="Mens Jeans" />
+          <label for="Mens Jeans">Mens Jeans</label>
+          <input type="radio"id="Mens Trouser"name="categories"value="Mens Trouser"/>
+          <label for="Mens Trouser">Mens Trouser</label>
+          <input type="radio" id="Mens Sneakers" name="categories" value="Mens Sneakers" />
+          <label for="Mens Sneakers">Mens Sneakers</label>
+          <input type="radio" id="Women's Top" name="categories" value="Women's Top" />
+          <label for="Women's Top">Women's Top</label>
+          <input type="radio" id="Women's Dresses" name="categories" value="Women's Dresses" />
+          <label for="Women's Dresses">Women's Dresses</label>
+          <input type="radio" id="Kurtis" name="categories" value="Kurtis" />
+          <label for="Kurtis">Kurtis</label>
+          <input type="radio"id="Women's Skirts"name="categories"value="Women's Skirts"/>
+          <label for="Women's Skirts">Women's Skirts</label>
+          <input type="radio" id="Handbags" name="categories" value="Handbags" />
+          <label for="Handbags">Handbags</label>
+          <input type ="radio" id="Sports Shoes" name="categories" value="Sports Shoes" />
+          <label for="Sports Shoes">Sports Shoes</label>
+
+        </div>
+      </div>
+      <!-- <div class="category-container">
+        <p class="categories" style="font-size: 30px">"Refine Your Search: Find the Perfect Fit!"</p>
+       
+      </div> -->
+    </section>
+    <section id="product1" class="section-p1" style="margin-top: 41px;">
+      
+      <div class="pro-container" id="prod1">
+      </div>
+      <!-- <div><button class="show-more-btn">Show More +</button></div> -->
+  
+  </section>
+  <script type="module" src="./Frontend/scripts/shop.js"></script>
+  </body>
+</html>

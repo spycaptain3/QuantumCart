@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="icon" type="image/png" href="../../Frontend/img/logo.png">
+    <link rel="stylesheet" href="../../Frontend/stylesheet/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    
+<section id="header">
+    <header class="header-area">
+        <!-- site-navbar start -->
+        <div class="navbar-area">
+         
+            <nav class="site-navbar">
+              <!-- site logo -->
+              <a href="/"><img src="../../Frontend/img/logo.png" class="logo"></a>
+      
+              <!-- site menu/nav -->
+              <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/shop">shop</a></li>
+                <li><a href="/orders">orders</a></li>
+                <li><a href="/auth" id="nav_auth">Authenticate</a></li>
+                <li><a id="nav_logout">Logout</a></li>
+                <li><a href="/cart"><i style="color: black" class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+              </ul>
+      
+              <!-- nav-toggler for mobile version only -->
+              <button class="nav-toggler">
+                <span></span>
+              </button>
+            </nav>
+        
+        </div><!-- navbar-area end -->
+      </header>
+</section>
+<div class="container" id="notificationContainer" style="z-index:3"></div>
+<section id="prodetails" class="section-p1">
+    
+</section>
+
+<section id="product1" class="section-p1">
+    <h2>Similar Products</h2>
+    <p>Coolest Collection of Similar Products</p>
+    <div class="pro-container" id="similarProduct">
+    </div>
+</section> 
+
+<div class="container" id="notificationContainer" style="z-index:3"></div>
+
+<section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span>
+        </p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button class="normal">Sign Up</button>
+    </div>
+</section>
+
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="../../Frontend/img/l1.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong>Shiva Enclave , Ghaziabad</p>
+        <p><strong>Phone:</strong>+91 7082285866</p>
+        <p><strong>Hours:</strong>Anytime</p>
+       
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact us</a>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="/profile">Account</a>
+        <a href="/login">Sign In</a>
+        <a href="/cart">View Cart</a>
+        <a href="/help">Help</a>
+    </div>
+    <div class="col install" >
+     
+      <p>Secured Payment Gateways</p>
+      <img src="../../Frontend/img/pay/pay.png" alt="">
+    </div>
+
+    <div class="copyright">
+        <p>&#169; 2023 - ShopNet</p>
+    </div>
+</footer>
+
+<script>
+  const productId = '<%= productId %>'
+</script>
+
+
+     <script type="module" src="../../Frontend/scripts/product.js"></script>
+</body>
+</html>
