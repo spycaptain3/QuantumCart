@@ -48,7 +48,7 @@ To run the project locally on your machine, follow these instructions.
 
 1. Clone this repository to your local machine.
 
-        git clone https://github.com/Rishi838/ShopNet.git
+        https://github.com/spycaptain3/QuantumCart.git
 2. Install the required dependencies.
 
        npm install
