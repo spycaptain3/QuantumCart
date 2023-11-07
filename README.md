@@ -19,7 +19,7 @@ Welcome to our Ecommerce Store! This is a live website where customers can brows
 
 ## Introduction
 
-Our Ecommerce Store provides a convenient and secure platform for customers to shop online. With a user-friendly interface and a wide variety of products, we aim to make online shopping a pleasant experience for everyone. The website is live and can be accessed at [ShopNet](https://shopnet.onrender.com).
+Our Ecommerce Store provides a convenient and secure platform for customers to shop online. With a user-friendly interface and a wide variety of products, we aim to make online shopping a pleasant experience for everyone. The website is live and can be accessed at [QuantumCart](https://quantumcart.onrender.com).
 
 ## Features
 
