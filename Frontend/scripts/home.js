@@ -92,7 +92,7 @@ async function fetch_products(id,url) {
       <h4>$${products[i].Price}</h4></div>
       <div Style="dispaly:flex; flex-direction: row; width:100%; margin-top:25px; border-radius: 25px; background-color:
       rgb(235, 243, 232); justify-content: left;  align-items: left;">
-      <a href="https://developers.google.com/ar" Style="text-decoration:None; color:black; font: 15px Arial, sans-serif; ">AR-VIEW</a></div>
+      <a href="../../ARviews/index.html" Style="text-decoration:None; color:black; font: 15px Arial, sans-serif; ">AR-VIEW</a></div>
   <i id="${products[i]._id}cart" class="fa-sharp fa-solid fa-cart-shopping cart" style="width: 40px;height: 20px;"></i>
 </div>`;
   }
